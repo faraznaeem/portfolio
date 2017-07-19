@@ -6,14 +6,41 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title><%= current_page.data.title || "Middleman" %></title>
-      <%= stylesheet_link_tag "site" %>
-      <%= javascript_include_tag "site" %>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-
+      <link rel="stylesheet" href="/css/style.css">
+      <%= stylesheet_link_tag "site" %>
   </head>
   <body>
     <%= yield %>
+    <!-- Element Showed -->
+    <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">menu</i></a>
 
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-activates="menu">
+      <div class="tap-target-content">
+        <h5>Title</h5>
+        <p>A bunch of text</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <%= javascript_include_tag "site" %>
+    <script>
+      $(document).ready(function(){
+         $('.target').pushpin({
+           top: 0,
+           bottom: 1000,
+           offset: 0
+         });
+       });
+      $('.pushpin-demo-nav').each(function() {
+       var $this = $(this);
+       var $target = $('#' + $(this).attr('data-target'));
+       $this.pushpin({
+         top: $target.offset().top,
+         bottom: $target.offset().top + $target.outerHeight() - $this.height()
+        });
+      });
+    </script>
   </body>
 </html>
