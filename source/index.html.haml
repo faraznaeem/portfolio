@@ -1,21 +1,27 @@
-.welcome
+.welcome.pushpin-live
   %h1 Faraz Naeem's Coding Portfolio
 
-%h2 PrepCourse
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
-    %p= link_to project[:website]
+  .placeholder
+    %p Here is some text
 
-%h2 Main Course
-.projects_main
-  - data.projects_main.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
+.projects.pushpin-live
+  %h2 PrepCourse
+  .projects
+    - data.projects.each do |project|
+      %h4= project[:name]
+      %p= project[:description]
+      %p= link_to project[:website]
 
-%h2 About me
-.
+.other.pushpin-live
+  %h2 Main Course
+  .projects_main
+    - data.projects_main.each do |project|
+      %h4= project[:name]
+      %p= project[:description]
+
+
+
+
 
 
 

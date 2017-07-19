@@ -3,44 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title><%= current_page.data.title || "Middleman" %></title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
       <link rel="stylesheet" href="/css/style.css">
       <%= stylesheet_link_tag "site" %>
   </head>
-  <body>
-    <%= yield %>
-    <!-- Element Showed -->
-    <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">menu</i></a>
 
-    <!-- Tap Target Structure -->
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+    <%= yield %>
+    <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">?</i></a>
     <div class="tap-target" data-activates="menu">
       <div class="tap-target-content">
-        <h5>Title</h5>
-        <p>A bunch of text</p>
+        <h5>Get in touch</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </p>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "site" %>
     <script>
-      $(document).ready(function(){
-         $('.target').pushpin({
-           top: 0,
-           bottom: 1000,
-           offset: 0
-         });
-       });
-      $('.pushpin-demo-nav').each(function() {
+    $('.pushpin-live').each(function() {
        var $this = $(this);
        var $target = $('#' + $(this).attr('data-target'));
        $this.pushpin({
          top: $target.offset().top,
          bottom: $target.offset().top + $target.outerHeight() - $this.height()
-        });
-      });
+       });
+     });
+     $(document).ready(function(){
+       $('.target').pushpin({
+         top: 0,
+         bottom: 1000,
+         offset: 0
+       });
+     });
     </script>
   </body>
 </html>

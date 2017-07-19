@@ -1,5 +1,5 @@
 body {
-  background-color: #fbc547;
+  background-image: url();
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -21,4 +21,19 @@ a {
 .middleman-logo {
   margin-bottom: 1rem;
   width: 10rem;
+}
+
+// Class for when element is above threshold
+.pin-top {
+  position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+  position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+  position: fixed !important;
 }
