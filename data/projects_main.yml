@@ -1,0 +1,18 @@
+- name: TDD & ATM
+  description: Used TDD to make a simulated ATM
+  website: https://www.facebook.com
+  language: Ruby, testing with Rspec and versioncontrol through Github
+
+- name: TDD & BMI-calculator
+  description: Used TDD to make a BMI-calculator
+  website: https://www.facebook.com
+  language: ruby Rspec
+
+- name: FizzBuzz
+  description: My first Test driven ruby project
+  website: https://www.facebook.com
+  language: html css jquery javascript
+
+- name: FizzBuzz
+  description: My first Test driven ruby project
+  website: https://www.facebook.com

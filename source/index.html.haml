@@ -1,0 +1,20 @@
+.welcome
+  %h1 Middleman is running hard
+  %p.doc
+    = link_to 'read Documentation Online', 'https://middlemanapp.com', target: '_blank'
+
+%h2 PrepCourse
+.projects
+  - data.projects.each do |project|
+    .card
+      %span.card_title
+        %h4= project[:name]
+      %p= project[:description]
+      %card_action
+        %p= link_to project[:website]
+
+%h2 Main Course
+.projects_main
+  - data.projects_main.each do |project|
+    %h4= project[:name]
+    %p= project[:description]
