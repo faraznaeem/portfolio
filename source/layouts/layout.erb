@@ -4,23 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title><%= current_page.data.title || "Middleman" %></title>
+      <title><%= current_page.data.title || "Portfolio" %></title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-      <link rel="stylesheet" href="/css/style.css">
       <%= stylesheet_link_tag "site" %>
-      <nav>
-        <div class="nav-wrapper">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="other.html">Who am I?</a></li>
-            <li><a href="badges.html">Projects</a></li>
-            <li><a href="collapsible.html">Past</a></li>
-            <li><a href="collapsible.html">Present</a></li>
-            <li><a href="collapsible.html">Future</a></li>
-          </ul>
-        </div>
-      </nav>
   </head>
-
   <body>
     <%= yield %>
     <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">?</i></a>
