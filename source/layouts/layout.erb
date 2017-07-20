@@ -8,19 +8,20 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
       <link rel="stylesheet" href="/css/style.css">
       <%= stylesheet_link_tag "site" %>
+      <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="other.html">Who am I?</a></li>
+            <li><a href="badges.html">Projects</a></li>
+            <li><a href="collapsible.html">Past</a></li>
+            <li><a href="collapsible.html">Present</a></li>
+            <li><a href="collapsible.html">Future</a></li>
+          </ul>
+        </div>
+      </nav>
   </head>
 
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-      </div>
-    </nav>
     <%= yield %>
     <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">?</i></a>
     <div class="tap-target" data-activates="menu">
@@ -33,22 +34,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "site" %>
-    <script>
-    $('.pushpin-live').each(function() {
-       var $this = $(this);
-       var $target = $('#' + $(this).attr('data-target'));
-       $this.pushpin({
-         top: $target.offset().top,
-         bottom: $target.offset().top + $target.outerHeight() - $this.height()
-       });
-     });
-     $(document).ready(function(){
-       $('.target').pushpin({
-         top: 0,
-         bottom: 1000,
-         offset: 0
-       });
-     });
-    </script>
   </body>
 </html>
