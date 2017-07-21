@@ -5,6 +5,7 @@
 
 .pin-bottom {
   position: relative;
+  padding: 0px;
 }
 
 .pinned {
@@ -14,34 +15,22 @@
 html, body, .block {
   height: 100%;
   width: 100%;
-  }
-
-  html {
-    padding-top: 0px;
+  background-color: inherit;
   }
 
 .welcome {
   background-color: #1de9b6;
   text-align: center;
   top: 0px;
-
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
 }
 
 .projects {
   text-align: center;
   background-color: #f44336;
-}
-
-#introduction {
-  top: 0px;
-  padding-top: 0px;
-
-}
-
-h1 {
-  padding-top: 0px;
-  height: 100%;
-  background-color: #1de9b6;
 }
 
 .nav-wrapper-top {
@@ -70,4 +59,16 @@ h1 {
 
 .content {
   height:100vh;
+}
+
+.topsection, .midsection, .bottomsection {
+  box-sizing: inherit;
+}
+h4, h2 {
+  padding: 10px;
+  margin-top: 0px;
+}
+
+#introduction {
+
 }

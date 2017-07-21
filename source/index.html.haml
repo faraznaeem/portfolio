@@ -1,31 +1,30 @@
 .content
-  %topsection
+  %topsection.container
     %nav.pushpin-live{"data-target" => "introduction"}
       .nav-wrapper-top
         %a.logo.center Portfolio
 
-    #introduction.block
-      .welcome
-        %h2.intro Faraz Naeem's Coding Portfolio
+  #introduction.block
+    .welcome
+      %h2.intro Faraz Naeem's Coding Portfolio
 
-        .placeholder
-          %p Here is some text
+      .placeholder
+        %p Here is some text
 
-  %midsection
+  %midsection.container
     %nav.pushpin-live{"data-target" => "experience"}
       .nav-wrapper-middle
-        %a.logo.center Faraz
+        %a.logo.center CV
 
     #experience.block
-      .projects
-        %h2 PrepCourse
-        .projects
-          - data.projects.each do |project|
-            %h4= project[:name]
-            %p= project[:description]
-            %p= link_to project[:website]
 
-  %bottomsection
+      .projects
+        - data.projects.each do |project|
+          %h4= project[:name]
+          %p= project[:description]
+          %p= link_to project[:website]
+
+  %bottomsection.container
     %nav.pushpin-live{"data-target" => "future"}
       .nav-wrapper-bottom
         %a.logo.center Faraz
