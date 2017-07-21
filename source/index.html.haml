@@ -1,24 +1,39 @@
+.content
+  %topsection
+    %nav.pushpin-live{"data-target" => "introduction"}
+      .nav-wrapper-top
+        %a.logo.center Portfolio
 
-#introduction.block
-  .welcome.pushpin-live{"data-target" => "introduction"}
-    %h1.intro Faraz Naeem's Coding Portfolio
+    #introduction.block
+      .welcome
+        %h2.intro Faraz Naeem's Coding Portfolio
 
-    .placeholder
-      %p Here is some text
+        .placeholder
+          %p Here is some text
 
-#experience.block
-  .projects.pushpin-live{"data-target" => "experience"}
-    %h2 PrepCourse
-    .projects
-      - data.projects.each do |project|
-        %h4= project[:name]
-        %p= project[:description]
-        %p= link_to project[:website]
+  %midsection
+    %nav.pushpin-live{"data-target" => "experience"}
+      .nav-wrapper-middle
+        %a.logo.center Faraz
 
-#future.block
-  .other.pushpin-live{"data-target" => "future"}
-    %h2 Main Course
-    .projects_main
-      - data.projects_main.each do |project|
-        %h4= project[:name]
-        %p= project[:description]
+    #experience.block
+      .projects
+        %h2 PrepCourse
+        .projects
+          - data.projects.each do |project|
+            %h4= project[:name]
+            %p= project[:description]
+            %p= link_to project[:website]
+
+  %bottomsection
+    %nav.pushpin-live{"data-target" => "future"}
+      .nav-wrapper-bottom
+        %a.logo.center Faraz
+
+    #future.block
+      .other
+        %h2 Main Course
+        .projects_main
+          - data.projects_main.each do |project|
+            %h4= project[:name]
+            %p= project[:description]
