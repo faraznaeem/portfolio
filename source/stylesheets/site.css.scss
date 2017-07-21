@@ -18,8 +18,7 @@
 html, body, .block {
   height: 100%;
   width: 100%;
-  text-align: center;
-}
+  }
 
 .welcome {
   background-color: #ffeb3b;
@@ -29,13 +28,14 @@ html, body, .block {
 }
 
 .projects {
-  background-color: #e53935
-
+  background-color: #e53935;
+  text-align: center;
 
 }
 
 .other {
   background-color: #64b5f6;
+  text-align: center;
 
 }
 
