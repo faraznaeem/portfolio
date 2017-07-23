@@ -5,17 +5,21 @@
 
 .pin-bottom {
   position: relative;
-  padding: 0px;
+
 }
 
 .pinned {
   position: fixed !important;
 }
-
+.nav {
+  top: 0px;
+}
 html, body, .block {
   height: 100%;
   width: 100%;
   background-color: inherit;
+  color: white;
+  margin-bottom: 0px;
   }
 
 .welcome {
@@ -28,9 +32,9 @@ html, body, .block {
   height: 100px;
 }
 
-.projects {
+.projects, .projects_main {
   text-align: center;
-  background-color: #f44336;
+  padding-bottom: 0px;
 }
 
 .nav-wrapper-top {
@@ -64,11 +68,26 @@ html, body, .block {
 .topsection, .midsection, .bottomsection {
   box-sizing: inherit;
 }
+
+.future {
+  padding-bottom: 20px;
+}
 h4, h2 {
   padding: 10px;
   margin-top: 0px;
 }
 
-#introduction {
+#introduction{
+  background-color: #1de9b6;
+}
 
+#experience {
+  background-color: #f44336;
+}
+
+footer {
+  background-color: #ff8a80;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-size: 15px;
 }
