@@ -1,0 +1,130 @@
+.pin-top {
+  position: relative; }
+
+.pin-bottom {
+  position: relative; }
+
+.pinned {
+  position: fixed !important; }
+
+html, body, .block {
+  height: 100%;
+  width: 100%;
+  color: white; }
+
+.row {
+  text-align: left; }
+
+.education {
+  padding-top: 0px; }
+
+.welcome {
+  background-color: #1de9b6;
+  text-align: center;
+  top: 0px;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px; }
+
+.first {
+  text-align: center; }
+
+.other {
+  font-size: 15px;
+  text-align: left;
+  display: block; }
+  .other .education {
+    font-size: 15px;
+    text-align: left;
+    display: block; }
+
+.nav-wrapper-bottom {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: #4fc3f7; }
+
+.nav-wrapper-top {
+  background-color: #1de9b6;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 40px;
+  text-align: center; }
+
+.nav-wrapper-middle {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: #43a047;
+  margin-top: auto; }
+
+i {
+  font-size: 40px;
+  letter-spacing: 30px; }
+
+.content {
+  height: 100vh; }
+
+.topsection, .midsection, .bottomsection {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.bottomsection.container {
+  background-color: #29b6f6; }
+
+h4, h2, h6 {
+  margin-top: 0px;
+  font-weight: bold; }
+
+.project {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 20px;
+  background-color: #4fc3f7; }
+
+#introduction {
+  background-color: #1de9b6; }
+
+.language {
+  background-color: #4fc3f7; }
+
+#experience {
+  background-color: #43a047;
+  padding: 30px; }
+
+#future {
+  background-color: #4fc3f7;
+  text-align: center; }
+
+footer {
+  background-color: #ff8a80;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-size: 15px; }
+
+.head {
+  font-weight: bold; }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; }
+
+.introduction {
+  padding: 50px; }
+
+.intro {
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border-top: 20px; }
+
+.frameworks {
+  font-size: 10px; }
+
+.row2 {
+  padding: 20px; }
