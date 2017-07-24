@@ -1,18 +1,7 @@
-- name: TDD & ATM
-  description: Used TDD to make a simulated ATM
-  website:
-  language: Ruby, testing with Rspec and versioncontrol through Github
+- name: Partner and founder Kista Redovisningsbyrå
+  description: Helped small and midsize companies with accounting, payroll and consulting services.
+  website: kistaredovisning.se
 
-- name: TDD & BMI-calculator
-  description: Used TDD to make a BMI-calculator with a webinterface
-  website: https://www.facebook.com
-  language: javascript jasmine
-
-- name: Slowfood
-  description: A resturant website built with login, registratin and chart-function
-  website: https://www.facebook.com
-  language: html css sinatra ruby datamapper
-
-- name: Portfolio
-  description: My first Test driven ruby project
-  website: https://www.facebook.com
+- name: Marketing assistant at Buildor.se
+  description: Graphic design and marketing activities.
+  website: buildor.se

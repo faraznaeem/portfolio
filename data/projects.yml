@@ -1,19 +1,19 @@
-- name: My First Website
-  description: Simple HTML site i've build during the PrepCourse
-  website: https://www.facebook.com
-  language: html css
+- name: TDD & ATM
+  description: Used TDD to make a simulated ATM
+  website:
+  language: Ruby, testing with Rspec and versioncontrol through Github
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- name: TDD & BMI-calculator
+  description: Used TDD to make a BMI-calculator with a webinterface
   website: https://www.facebook.com
-  language: ruby Rspec
+  language: javascript jasmine
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- name: Slowfood
+  description: A resturant website built with login, registratin and chart-function
   website: https://www.facebook.com
-  language: html css jquery javascript
+  language: html css sinatra ruby datamapper
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- name: Portfolio
+  description: Portfolio website
   website: https://www.facebook.com
-  language: html css jquery javascript
+  language: Middleman Ruby Javascript

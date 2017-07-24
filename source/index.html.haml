@@ -1,43 +1,72 @@
-.content
-  %topsection.container
-    %nav.pushpin-live{"data-target" => "introduction"}
-      .nav-wrapper-top
-        %a.logo.center Portfolio
-
+%topsection.container
+  %nav.pushpin-live{"data-target" => "introduction"}
+    .nav-wrapper-top
+      %a.logo.center Faraz Naeem
   #introduction.block
+    %img(src="/images/butterfly.png")
     .welcome
-      %h2.intro Faraz Naeem's Coding Portfolio
+      %h4.text-align.center "Metamorphosis"
+      %p noun  meta·mor·pho·sis \ˌme-tə-ˈmȯr-fə-səs\
+      %p.first Metamorphosis is a biological process by which an animal physically develops after birth or hatching, involving a conspicuous and relatively abrupt change in the animal's body structure through cell growth and differentiation.
+      %p.frameworks
+        %i.devicon-angularjs-plain
+        %i.devicon-atom-original
+        %i.devicon-css3-plain
+        %i.devicon-cucumber-plain
+        %i.devicon-html5-plain
+        %i.devicon-jasmine-plain
+        %i.devicon-javascript-plain
+        %i.devicon-jquery-plain
+        %i.devicon-rails-plain
+        %i.devicon-ruby-plain
+        %i.devicon-slack-plain
+        %i.devicon-wordpress-plain
 
-      .placeholder
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+%midsection.container
+  %nav.pushpin-live{"data-target" => "experience"}
+    .nav-wrapper-middle
+      %a.logo.center CV
+  #experience.block
+    %h5.text-align.center It's simple really..if you're not satisfied, then just change. I decided to do that from an very successfull accountant with his own company to a junior web developer in just 12 weeks.
+    .other.text-align.center
+    .projects_main.text-align.center
+      - data.projects_main.each do |project|
+        %h6= project[:name]
+        %p.last= "- " + project[:description]
+    .education.text-align.center
+      - data.education.each do |education|
+        %h6= education[:name]
+        %p= "- " + education[:description]
+      = image_tag('/images/linkedin.png')
 
+%bottomsection.container
+  %nav.pushpin-live{"data-target" => "future"}
+    .nav-wrapper-bottom
+      %a.logo.center Coding Portfolio
+  #future.block
+    .language
+    %h6.intro.margin-top.0px Frameworks and programming languages
+    %p.frameworks
+      %i.devicon-angularjs-plain
+      %i.devicon-atom-original
+      %i.devicon-css3-plain
+      %i.devicon-cucumber-plain
+      %i.devicon-html5-plain
+      %i.devicon-jasmine-plain
+      %i.devicon-javascript-plain
+      %i.devicon-jquery-plain
+      %i.devicon-rails-plain
+      %i.devicon-ruby-plain
+      %i.devicon-slack-plain
+      %i.devicon-wordpress-plain
 
-  %midsection.container
-    %nav.pushpin-live{"data-target" => "experience"}
-      .nav-wrapper-middle
-        %a.logo.center CV
-
-    #experience.block
-
-      .projects
+      .project
         - data.projects.each do |project|
-          %h4= project[:name]
+          %p.head= project[:name]
           %p= project[:description]
-          %p= link_to project[:website]
 
-  %bottomsection.container.col.s12
-    %nav.pushpin-live{"data-target" => "future"}
-      .nav-wrapper-bottom
-        %a.logo.center Faraz
-
-    #future.block
-      .other
-        %h2 Main Course
-        .projects_main
-          - data.projects_main.each do |project|
-            %h4= project[:name]
-            %p.last= project[:description]
-
-        %footer.page-footer
-          .col.s6 Lorem ipsum dolor sit amet, consectetur
-          .row.col.s6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  %footer.page-footer
+    .row
+      .col.s12 Contact details
+      .col.s6 Faraz Naeem
+      .col.s6= link_to image_tag( 'github.png'), 'http://www.google.com'
