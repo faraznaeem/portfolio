@@ -1,19 +1,19 @@
-- name: TDD & ATM
+- name: Virtual ATM
   description: Used TDD to make a simulated ATM
   website:
-  language: Ruby, testing with Rspec and versioncontrol through Github
+  language: Ruby, testing with Rspec and version control through Github
 
-- name: TDD & BMI-calculator
+- name: BMI-calculator
   description: Used TDD to make a BMI-calculator with a webinterface
   website: https://www.facebook.com
-  language: javascript jasmine
+  language: javascript, jasmine and jquery
 
-- name: Slowfood
-  description: A resturant website built with login, registratin and chart-function
+- name: Slowfood resturant menu
+  description: A resturant website built with login, registration and chart-function
   website: https://www.facebook.com
-  language: html css sinatra ruby datamapper
+  language: html, css, sinatra, ruby, and datamapper
 
 - name: Portfolio
   description: Portfolio website
   website: https://www.facebook.com
-  language: Middleman Ruby Javascript
+  language: Middleman, Ruby, and Javascript

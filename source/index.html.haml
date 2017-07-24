@@ -25,9 +25,9 @@
 %midsection.container
   %nav.pushpin-live{"data-target" => "experience"}
     .nav-wrapper-middle
-      %a.logo.center CV
+      %a.logo.center The Past
   #experience.block
-    %h5.text-align.center It's simple really..if you're not satisfied, then just change. I decided to do that from an very successfull accountant with his own company to a junior web developer in just 12 weeks.
+    %h5.text-align.center It's simple really..if you're not satisfied, then just change. I decided to do that from an very successfull accountant with his own company to a web developer in just 12 weeks.
     .other.text-align.center
     .projects_main.text-align.center
       - data.projects_main.each do |project|
@@ -37,36 +37,37 @@
       - data.education.each do |education|
         %h6= education[:name]
         %p= "- " + education[:description]
-      = image_tag('/images/linkedin.png')
+      = link_to image_tag( 'linkedin.png'), 'https://www.linkedin.com/in/faraznaeem1/'
 
 %bottomsection.container
   %nav.pushpin-live{"data-target" => "future"}
     .nav-wrapper-bottom
       %a.logo.center Coding Portfolio
   #future.block
-    .language
-    %h6.intro.margin-top.0px Frameworks and programming languages
-    %p.frameworks
-      %i.devicon-angularjs-plain
-      %i.devicon-atom-original
-      %i.devicon-css3-plain
-      %i.devicon-cucumber-plain
-      %i.devicon-html5-plain
-      %i.devicon-jasmine-plain
-      %i.devicon-javascript-plain
-      %i.devicon-jquery-plain
-      %i.devicon-rails-plain
-      %i.devicon-ruby-plain
-      %i.devicon-slack-plain
-      %i.devicon-wordpress-plain
-
-      .project
-        - data.projects.each do |project|
-          %p.head= project[:name]
-          %p= project[:description]
-
-  %footer.page-footer
     .row
-      .col.s12 Contact details
-      .col.s6 Faraz Naeem
-      .col.s6= link_to image_tag( 'github.png'), 'http://www.google.com'
+      .col.s6= link_to image_tag( 'icon-github.png'), 'https://github.com/faraznaeem/'
+      .col.s6
+        .row2
+        - data.projects.each do |project|
+          %h5.head= project[:name]
+          %p= project[:description] + " with " + project[:language]
+
+    .language
+      %h6.intro I use the following frameworks, programming languages and tools
+      %p.frameworks
+        %i.devicon-angularjs-plain
+        %i.devicon-atom-original
+        %i.devicon-css3-plain
+        %i.devicon-cucumber-plain
+        %i.devicon-html5-plain
+        %i.devicon-jasmine-plain
+        %i.devicon-javascript-plain
+        %i.devicon-jquery-plain
+        %i.devicon-rails-plain
+        %i.devicon-ruby-plain
+        %i.devicon-slack-plain
+        %i.devicon-wordpress-plain
+
+  %footer.page-footer.text-align.center
+    %p Faraz Naeem
+    %p faraznaeem(at)gmail.com

@@ -15,7 +15,7 @@ html, body, .block {
   color: white;
   }
 
-  .projects_main, .education {
+  .row { text-align: left;
 
   }
   .education {
@@ -102,7 +102,7 @@ h4, h2, h6 {
   background-color: #1de9b6;
 }
 .language {
-  background-color: #29b6f6;
+  background-color: #4fc3f7;
 }
 
 #experience {
@@ -137,9 +137,13 @@ img {
 }
 .intro {
   margin-top: 0px;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 20px;
 }
 
 .frameworks {
   font-size: 10px;
+}
+.row2 {
+  padding: 20px;
 }
